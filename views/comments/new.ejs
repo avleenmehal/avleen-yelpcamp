@@ -1,0 +1,22 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row" style="margin: 30px auto">
+        <h1 style="text-align: center; width:100%"> Add a comment to <%= campground.name%> </h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/campgrounds/<%= campground._id%>/comments" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Your comment" name="comment[text]">    
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary">submit</button>
+                </div>
+            </form>
+            <a href="/campgrounds/<%= campground._id%>">Go Back</a>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>
+
+<!--type="button" class="btn btn-success"  I CANT ADD THESE CLASSES TO THE BUTTON AS IT WONT WORK TO POST REQUEST-->
