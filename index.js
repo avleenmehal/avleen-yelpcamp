@@ -1,5 +1,5 @@
-var Campground = require("../modules/campground");
-var Comment = require("../modules/comment");
+var Campground = require("modules/campground");
+var Comment = require("modules/comment");
 
 //add all the middleware functions
 var middlewareObject={};
